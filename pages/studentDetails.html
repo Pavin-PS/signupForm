@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Table</title>
+    <link rel="stylesheet" href="../assets/style.css">
+    <style>
+        table{
+            border: 1px solid black;
+            border-collapse: collapse;
+            margin-left: 40%;
+        }
+        tr, th, td{
+            border: 1px solid black; 
+            width: 100px;
+            height: 50px;
+            text-align: center;
+        }
+        .sno{
+            width: 40px;
+        }
+        tr:nth-child(odd){
+            background-color: gray;
+            color: white;
+        }
+        td:nth-child(4){
+            background-color: white;
+            color: black;
+        }
+        td:nth-child(3){
+            background-color: gray;
+            color: white;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="../index.html">Signup</a>
+        <a href="../pages/details.html">Details</a>
+        <a href="./studentDetails.html">Student</a>
+    </div>
+    <h3 style="text-align: center;">Student database</h3>
+
+    <table>
+        <tr>
+            <th class="sno">S.No</th>
+           <th>Name</th>
+           <th>Year</th>
+           <th>Department</th> 
+        </tr>
+        <tr>
+            <td class="sno">1</td>
+            <td>
+                Aakash S
+            </td>
+            <td rowspan="5">
+                IV
+            </td>
+            <td rowspan="3">
+                EIE
+            </td>
+        </tr>
+        <tr>
+            <td class="sno">2</td>
+            <td>
+                Pavin P S
+            </td>
+        </tr>
+        <tr>
+            <td class="sno">3</td>
+            <td>
+                Ravi
+            </td>
+        </tr>
+        <tr>
+            <td class="sno">4</td>
+            <td>
+                Rakesh
+            </td>
+            <td rowspan="2">
+                Civil
+            </td>
+        </tr>
+        <tr>
+            <td class="sno">5</td>
+            <td>
+                Suresh
+            </td>
+        </tr>
+        <tr>
+            <td class="sno">6</td>
+            <td>
+                Sreeja G S
+            </td>
+            <td rowspan="2">
+                III
+            </td>
+            <td rowspan="2">
+                EIE
+            </td>
+        </tr>
+        <tr>
+            <td class="sno">7</td>
+            <td>Darshini</td>
+        </tr>
+    </table>
+</body>
+</html>
